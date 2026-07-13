@@ -4,10 +4,12 @@
 
 int main(void) {
 
-    int i;
-    i = 2;
+    int i = 2;
+    float f = 3.14;
+    char *s = "Hello, World!"; // char * (char pointer) is the string type
 
-    printf("Hello, World!\n");
+    // printf("Hello, World!\n");
+    printf("%s i = %d and f = %f!\n", s, i, f);
 }
 
 // Left off at Chapter 3, page 21
