@@ -5,7 +5,7 @@
 int main(void) {
 
     int i;
-    float f;
+    i = 2;
 
     printf("Hello, World!\n");
 }
