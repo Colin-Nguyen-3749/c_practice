@@ -17,4 +17,4 @@ int main(void) {
     printf("%s i = %d and f = %f!\n", s, i, f);
 }
 
-// Left off at Chapter 3, page 21
+// Left off at Chapter 3.2 page 24
