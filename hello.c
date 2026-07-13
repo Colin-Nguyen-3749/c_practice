@@ -8,6 +8,11 @@ int main(void) {
     float f = 3.14;
     char *s = "Hello, World!"; // char * (char pointer) is the string type
 
+    int x = 1; 
+    if (x) {
+        printf("x is true!\n");
+    }
+
     // printf("Hello, World!\n");
     printf("%s i = %d and f = %f!\n", s, i, f);
 }
