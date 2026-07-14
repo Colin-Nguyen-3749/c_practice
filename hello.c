@@ -24,7 +24,7 @@ int main(void) {
     // If x % 2 is 0, then print 'even', otherwise print 'odd'
     printf("The number %d is %s.\n", x, x % 2 == 0? "even": "odd");
 
-    // printf("This is y if q is " + q + ": " + y);
+    printf("This is y if q is %d: %d.\n", q, y);
 
     // printf("Hello, World!\n");
     printf("%s i = %d and f = %f!\n", s, i, f);
