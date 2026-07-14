@@ -53,6 +53,30 @@ int main(void) {
 
     //==================================
 
+    //==================================
+    // do-while vs while
+    // practically the same, but the condition check for a while loop 
+    // happens at the START of the loop; do-while does it at the end
+
+    // example:
+    int c = 10;
+
+    // this won't execute
+    while (c < 10) {
+        printf("while: c is %d\n", c);
+        c++;
+    }
+
+    // with a do-while statement:
+
+    do {
+        printf("do-while: c is %d\n", c);
+        c++;
+    } while (c < 10);
+
+
+    //===================================
+
     // printf("Hello, World!\n");
     printf("%s i = %d and f = %f!\n", s, i, f);
 }
