@@ -26,6 +26,11 @@ int main(void) {
 
     printf("This is y if q is %d: %d.\n", q, y);
 
+    // multi-purpose for-loop!
+    for (int k = 0, l = 0; k < 15; k++, l++) {
+        printf("%d, %d\n", k, l);
+    }
+
     // printf("Hello, World!\n");
     printf("%s i = %d and f = %f!\n", s, i, f);
 }
