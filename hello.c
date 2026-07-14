@@ -34,7 +34,7 @@ int main(void) {
     //==================================
     // sizeof operator tells us the size (in bytes) that
     // a particular variable or data type uses in memory
-    
+
     int a = 999;
     
     // %zu is the format specifier for type size_T
@@ -43,6 +43,13 @@ int main(void) {
     printf("%zu\n", sizeof a);
     printf("%zu\n", sizeof(2+7));
     printf("%zu\n", sizeof 3.14);
+
+    // sizeof is the size of bytes of the type of the expression, not the 
+    // size of the expression itself!
+    // That's why (2+7) is the same size as a (999) - they're both ints!
+
+    printf("%zu\n", sizeof(int));
+    printf("%zu\n", sizeof(char)); // char is always a size of 1!
 
     //==================================
 
