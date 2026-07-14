@@ -1,6 +1,8 @@
 /* Hello world program */
 
-#include <stdio.h>
+#include <stdio.h> // for printing statements
+#include <stdlib.h> // for rand
+
 
 int main(void) {
 
@@ -73,6 +75,14 @@ int main(void) {
         printf("do-while: c is %d\n", c);
         c++;
     } while (c < 10);
+
+    // example of when you'd use do-while:
+    // int r;
+
+    // do {
+    //     r = rand() % 100;
+    //     printf("%d\n", r);
+    // } while (r != 88); // repeat until 88 comes up!
 
 
     //===================================
