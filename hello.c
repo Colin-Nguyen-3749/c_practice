@@ -31,6 +31,21 @@ int main(void) {
         printf("%d, %d\n", k, l);
     }
 
+    //==================================
+    // sizeof operator tells us the size (in bytes) that
+    // a particular variable or data type uses in memory
+    
+    int a = 999;
+    
+    // %zu is the format specifier for type size_T
+    // If your compiler balks at the 'z' part, omit it
+
+    printf("%zu\n", sizeof a);
+    printf("%zu\n", sizeof(2+7));
+    printf("%zu\n", sizeof 3.14);
+
+    //==================================
+
     // printf("Hello, World!\n");
     printf("%s i = %d and f = %f!\n", s, i, f);
 }
