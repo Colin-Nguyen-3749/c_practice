@@ -103,6 +103,9 @@ int main(void) {
     f[2] = 1.61803;
     f[3] = 2.71828;
 
+    // You can also just write the above four lines of code like this instead:
+    // float f[4] = {3.14, 1.41, 1.62, 2.72};
+
     // Print them all out
     for (i = 0; i < 4; i++) {
         printf("%f\n", f[i]);
