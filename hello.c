@@ -95,6 +95,8 @@ int main(void) {
 
     int i; 
     float f[4]; // Declare an array of 4 floats
+    // When you declare an array, you have to give it a size
+    // This size has to be fixed.
 
     f[0] = 3.14159;
     f[1] = 1.41421;
