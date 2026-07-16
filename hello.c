@@ -105,6 +105,7 @@ int main(void) {
 
     // You can also just write the above four lines of code like this instead:
     // float f[4] = {3.14, 1.41, 1.62, 2.72};
+    // USE CURLY BRACES!
 
     // Print them all out
     for (i = 0; i < 4; i++) {
