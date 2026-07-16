@@ -108,6 +108,20 @@ int main(void) {
         printf("%f\n", f[i]);
     }
 
+    // How to get the length of an array
+    // trick: since C doesn't record this info,
+    // you have to manage it separately in another variable
+    // To do so, use sizeof on the array, and then divide that by 
+    // the size of each element to get the length
+
+    int x[12]; // create an array of 12 ints called x
+
+    printf("%zu\n", sizeof x);
+    printf("%zu\n", sizeof(int));
+
+    printf("%zu\n", sizeof x / sizeof(int));
+
+    //============================================
 
     // printf("Hello, World!\n");
     // printf("%s i = %d and f = %f!\n", s, i, f);
