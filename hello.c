@@ -107,6 +107,11 @@ int main(void) {
     // float f[4] = {3.14, 1.41, 1.62, 2.72};
     // USE CURLY BRACES!
 
+    // A weird way to build an array, where all indexes not initialized to a value 
+    // will automatically be zero:
+    // int a[10] = {0, 11, 22, [5]=55, 66, 77};
+    // This equals 0 11 22 0 0 55 66 77 0 0
+
     // Print them all out
     for (i = 0; i < 4; i++) {
         printf("%f\n", f[i]);
