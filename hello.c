@@ -93,15 +93,15 @@ int main(void) {
     // Arrays in C
     //===================================
 
-    int i; 
-    float f[4]; // Declare an array of 4 floats
+    // int i; 
+    // float f[4]; // Declare an array of 4 floats
     // When you declare an array, you have to give it a size
     // This size has to be fixed.
 
-    f[0] = 3.14159;
-    f[1] = 1.41421;
-    f[2] = 1.61803;
-    f[3] = 2.71828;
+    // f[0] = 3.14159;
+    // f[1] = 1.41421;
+    // f[2] = 1.61803;
+    // f[3] = 2.71828;
 
     // You can also just write the above four lines of code like this instead:
     // float f[4] = {3.14, 1.41, 1.62, 2.72};
@@ -113,9 +113,9 @@ int main(void) {
     // This equals 0 11 22 0 0 55 66 77 0 0
 
     // Print them all out
-    for (i = 0; i < 4; i++) {
-        printf("%f\n", f[i]);
-    }
+    // for (i = 0; i < 4; i++) {
+    //     printf("%f\n", f[i]);
+    // }
 
     // How to get the length of an array
     // trick: since C doesn't record this info,
@@ -123,14 +123,57 @@ int main(void) {
     // To do so, use sizeof on the array, and then divide that by 
     // the size of each element to get the length
 
-    int x[12]; // create an array of 12 ints called x
+    // int x[12]; // create an array of 12 ints called x
 
-    printf("%zu\n", sizeof x);
-    printf("%zu\n", sizeof(int));
+    // printf("%zu\n", sizeof x);
+    // printf("%zu\n", sizeof(int));
 
-    printf("%zu\n", sizeof x / sizeof(int));
+    // printf("%zu\n", sizeof x / sizeof(int));
 
     //============================================
+
+
+
+    //============================================
+    //Create a multidimensional array in C!
+
+    // int row, col;
+
+    // int a[2][5] = {
+    //     {0, 1, 2, 3, 4},
+    //     {5, 6, 7, 8, 9}
+    // };
+
+    // for (row = 0; row < 2; row++) {
+    //     for (col = 0; col < 5; col++ ) {
+    //         printf("(%d,%d) = %d\n", row, col, a[row][col]);
+    //     }
+    // }
+
+    // Make a 3 x 3 identity matrix
+    // int i[3][3] = {
+    //     [0][0] = 1,
+    //     [1][1] = 1, 
+    //     [2][2] = 1
+    // };
+
+    // int row, col;
+
+    // for (col = 0; col < 3; col++) {
+    //     for (row = 0; row < 3; row++) {
+    //         printf("%d ", i[row][col]);
+    //     }
+    //     printf("\n");
+    // }
+
+    //==============================================
+
+
+
+
+    //==============================================
+    
+
 
     // printf("Hello, World!\n");
     // printf("%s i = %d and f = %f!\n", s, i, f);
