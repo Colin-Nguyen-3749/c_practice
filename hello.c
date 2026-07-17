@@ -181,17 +181,17 @@ int main(void) {
 
     // YES, THE ASTERISK IS NEEDED 
     // (I tried without it and it threw an error)
-    char *s = "Hello, World!\n";
+    // char *s = "Hello, World!\n";
 
-    printf("%s\n", s);
+    // printf("%s\n", s);
 
-    // You can also declare it like an array in C
-    char st[] = "Hello, World!"; // You don't have to specify the size, C finds this automatically
+    // // You can also declare it like an array in C
+    // char st[] = "Hello, World!"; // You don't have to specify the size, C finds this automatically
 
-    for (int i = 0; i < 13; i++) {
-        printf("%c", s[i]);
-    }
-    printf("\n");
+    // for (int i = 0; i < 13; i++) {
+    //     printf("%c", s[i]);
+    // }
+    // printf("\n");
 
     // Interestingly, you can declare a string like a char 
     // and parse it like an array
@@ -202,14 +202,35 @@ int main(void) {
     // an array, though! 
 
     // This can be used to get string length
-    printf("Hello, world! is %zu bytes long.\n", strlen(s));
+    // printf("Hello, world! is %zu bytes long.\n", strlen(s));
 
-    // Now let's try copying the string
-    char t[100];
+    // // Now let's try copying the string
+    // char t[100];
 
-    strcpy(t, s); // copy to t from s
+    // strcpy(t, s); // copy to t from s, just remember it like t = s
 
     //=================================================
+
+
+
+    //=================================================
+    // Working with structs
+    // Just like an object (even though C doesn't have object-oriented programming)
+    // except it only holds variables, no methods
+
+    struct car {
+        char *name;
+        float price;
+        int speed;
+    };
+
+    struct car honda;
+
+    honda.name = "Honda Civic";
+    honda.price = 10000.96;
+    honda.speed = 200;
+
+
 
     // printf("Hello, World!\n");
     // printf("%s i = %d and f = %f!\n", s, i, f);
