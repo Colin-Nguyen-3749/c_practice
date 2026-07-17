@@ -172,7 +172,17 @@ int main(void) {
 
 
     //==============================================
-    
+    // Strings in C
+
+    // For some reason, there is no string datatype in C
+    // It's just a point to the first character in the string
+    // You declare strings with char instead
+
+    // YES, THE ASTERISK IS NEEDED 
+    // (I tried without it and it threw an error)
+    char *s = "Hello, World!\n";
+
+    printf("%s\n", s);
 
 
     // printf("Hello, World!\n");
