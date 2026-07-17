@@ -204,6 +204,11 @@ int main(void) {
     // This can be used to get string length
     printf("Hello, world! is %zu bytes long.\n", strlen(s));
 
+    // Now let's try copying the string
+    char t[100];
+
+    strcpy(t, s); // copy to t from s
+
     //=================================================
 
     // printf("Hello, World!\n");
