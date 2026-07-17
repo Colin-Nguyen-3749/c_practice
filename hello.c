@@ -184,6 +184,14 @@ int main(void) {
 
     printf("%s\n", s);
 
+    // You can also declare it like an array in C
+    char st[] = "Hello, World!"; // You don't have to specify the size, C finds this automatically
+
+    for (int i = 0; i < 13; i++) {
+        printf("%c", s[i]);
+    }
+    printf("\n");
+
 
     // printf("Hello, World!\n");
     // printf("%s i = %d and f = %f!\n", s, i, f);
