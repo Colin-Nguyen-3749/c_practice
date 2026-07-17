@@ -230,6 +230,13 @@ int main(void) {
     honda.price = 10000.96;
     honda.speed = 200;
 
+    // two other ways to initialize a struct's values:
+    // struct car honda = {"Honda Civic", 10000.96, 200};
+    // variables MUST be in the same order, kind of risky
+
+    // struct car honda = {.speed = 200, .name = "Honda Civic"};
+    // MUCH better; variables don't rely on order anymore
+
 
 
     // printf("Hello, World!\n");
