@@ -2,6 +2,7 @@
 
 #include <stdio.h> // for printing statements
 #include <stdlib.h> // for rand
+#include <string.h>
 
 
 int main(void) {
@@ -192,6 +193,18 @@ int main(void) {
     }
     printf("\n");
 
+    // Interestingly, you can declare a string like a char 
+    // and parse it like an array
+
+    // However, mutating a string like this: s[0] = 'z'; does NOT work
+    // if you declared it like a char (because you can't change a string literal!)
+    // It does work if you declare it as 
+    // an array, though! 
+
+    // This can be used to get string length
+    printf("Hello, world! is %zu bytes long.\n", strlen(s));
+
+    //=================================================
 
     // printf("Hello, World!\n");
     // printf("%s i = %d and f = %f!\n", s, i, f);
