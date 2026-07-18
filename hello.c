@@ -243,4 +243,4 @@ int main(void) {
     // printf("%s i = %d and f = %f!\n", s, i, f);
 }
 
-// Left off at Chapter 8.2 page 66
+// Left off at Chapter 9 page 69 nice
