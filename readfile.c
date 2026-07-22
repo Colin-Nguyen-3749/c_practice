@@ -6,6 +6,7 @@ int main(void) {
     FILE *fp;
 
     // Open file for reading
+    // "r" means to open a text stream for reading
     fp = fopen("hello.txt", "r");
 
     // Read a single character
